@@ -1,107 +1,98 @@
 <body>
     <div><a href="HONML_CH1.html">이전 챕터 이동</a><a href="index.html"> 메인으로</a><a href="HONML_CH2.html"> 다음 챕터 이동</a></div>
-
-
     <div>
-        <h2 data-ke-size="size26"><span style="color: #000000;">Ch2 데이터 다루기</span></h2>
-        <h3 data-ke-size="size23"><span style="color: #000000;">02-1 훈련 세트와 테스트 세트</span></h3>
-        <div><span style="color: #000000;">무언가 판단이 필요한 데이터가 주어진다면 머신러닝 알고리즘을 학습시킬 수 있고 이를 훈련이라고 합니다. 이때 사용되는 데이터는 <b>입력과 타깃 그리고 특성</b>으로 표현할 수 있습니다. 입력은 판단을 위한 기초데이터 타깃은 판단의 결과 특성은 판단의 기준으로 삼을 수 있는 규칙성입니다. 입력과 타깃 데이터가 있으며 머신러닝 알고리즘이 정답을 가리킬 수 있는 <b>지도 학습supervised learning</b>을 하면 됩니다. 그런데 만약 입력 데이터만 있고 타깃 데이터가 없다면 <b>비지도 학습unsupervised learning</b>을 하면 됩니다.</span></div>
-        <div><span style="color: #000000;">그래서 훈련 세트와 테스트 세트는 왜 분류한거냐고요? 만약 확보한 모든 데이터를 훈련에 사용하면 훈련시킨 머신러닝 알고리즘을 제대로 검증할
-                수 없기 때문입니다. 그래서 반드시 훈련 세트와 테스트 세트를 분리하여 훈련된 결과물을 검증하는데 사용해야합니다. 꼭 기억합시다. </span><span
-                style="color: #000000;"><b>훈련 세트와 테스트 세트!</b></span><span style="color: #000000;"></span></div>
-        <div>&nbsp;</div>
-        <h4 data-ke-size="size20"><span style="color: #000000;">샘플링 편향과 넘파이Numpy</span></h4>
-        <div><span style="color: #000000;">훈련 세트와 테스트 세트를 만들때 샘플들이 골고루 섞여 있지 않아서 전체 데이터를 데표할수 없는 현상을 <b>샘플링 편향sampling
-                    bias</b>이라고합니다. 확보된 데이터가 <b>특성feature</b>에 따라 샘플들이 골고루 섞여 있지 않다면 직접 섞어줍니다. 만든 데이터를 넘파이 배열로 바꿔준 후
-                <b>shuffle()</b>함수를 사용하면 됩니다. 하지만 이렇게 해도 골고루 잘 섞인다는 보장은 사실 없습니다.</span></div>
-        <h3 data-ke-size="size23"><span style="color: #000000;">02-2 데이터 전처리</span></h3>
-        <div><span style="color: #000000;"><b>핵심키워드: 데이터 전처리, 표준점수, 브로드캐스팅</b></span></div>
-        <div><span style="color: #000000;"><b>올바른 결과 도출을 위해서 데이터를 사용하기 전에 데이터 전처리 과정을 거칩니다. 전처리 과정을 거친 데이터로 훈련했을때의 차이를
-                    알고 표준 점수로 특성의 스케일을 변환하는 방법을 배웁니다.</b></span></div>
-        <div>&nbsp;</div>
+    <h2 data-ke-size="size26"><span style="color: #000000;">Ch2 데이터 다루기</span></h2>
+    <h3 data-ke-size="size23"><span style="color: #000000;">02-1 훈련 세트와 테스트 세트</span></h3>
+    <div><span style="color: #000000;">무언가 판단이 필요한 데이터가 주어진다면 머신러닝 알고리즘을 학습시킬 수 있고 이를 훈련이라고 합니다. 이때 사용되는 데이터는 <b>입력과 타깃 그리고 특성</b>으로 표현할 수 있습니다. 입력은 판단을 위한 기초데이터 타깃은 판단의 결과 특성은 판단의 기준으로 삼을 수 있는 규칙성입니다. 입력과 타깃 데이터가 있으며 머신러닝 알고리즘이 정답을 가리킬 수 있는 <b>지도 학습supervised learning</b>을 하면 됩니다. 그런데 만약 입력 데이터만 있고 타깃 데이터가 없다면 <b>비지도 학습unsupervised learning</b>을 하면 됩니다.</span></div>
+    <div><span style="color: #000000;">그래서 훈련 세트와 테스트 세트는 왜 분류한거냐고요? 만약 확보한 모든 데이터를 훈련에 사용하면 훈련시킨 머신러닝 알고리즘을 제대로 검증할 수 없기 때문입니다. 그래서 반드시 훈련 세트와 테스트 세트를 분리하여 훈련된 결과물을 검증하는데 사용해야합니다. 꼭 기억합시다. </span><span style="color: #000000;"><b>훈련 세트와 테스트 세트!</b></span><span style="color: #000000;"></span></div>
+    <div>&nbsp;</div>
+    <h4 data-ke-size="size20"><span style="color: #000000;">샘플링 편향과 넘파이Numpy</span></h4>
+    <div><span style="color: #000000;">훈련 세트와 테스트 세트를 만들때 샘플들이 골고루 섞여 있지 않아서 전체 데이터를 데표할수 없는 현상을 <b>샘플링 편향sampling bias</b>이라고합니다. 확보된 데이터가 <b>특성feature</b>에 따라 샘플들이 골고루 섞여 있지 않다면 직접 섞어줍니다. 만든 데이터를 넘파이 배열로 바꿔준 후 <b>shuffle()</b>함수를 사용하면 됩니다. 하지만 이렇게 해도 골고루 잘 섞인다는 보장은 사실 없습니다.</span></div>
+    <h3 data-ke-size="size23"><span style="color: #000000;">02-2 데이터 전처리</span></h3>
+    <div><span style="color: #000000;"><b>핵심키워드: 데이터 전처리, 표준점수, 브로드캐스팅</b></span></div>
+    <div><span style="color: #000000;"><b>올바른 결과 도출을 위해서 데이터를 사용하기 전에 데이터 전처리 과정을 거칩니다. 전처리 과정을 거친 데이터로 훈련했을때의 차이를 알고 표준 점수로 특성의 스케일을 변환하는 방법을 배웁니다.</b></span></div>
+    <div>&nbsp;</div>
     </div>
-    <p data-ke-size="size16"><span style="color: #000000;">파이썬 라이브러리인<span>&nbsp;</span></span><b>넘파이Numpy</b><span
-            style="color: #000000;">를 사용하면 손쉽게 임의로 섞인 데이터를 만들 수 있습니다.<span>&nbsp;</span></span></p>
+    <p data-ke-size="size16"><span style="color: #000000;">파이썬 라이브러리인<span>&nbsp;</span></span><b>넘파이Numpy</b><span style="color: #000000;">를 사용하면 손쉽게 임의로 섞인 데이터를 만들 수 있습니다.<span>&nbsp;</span></span></p>
     <p data-ke-size="size16">&nbsp;</p>
     <div data-ke-type="moreLess" data-text-more="더보기" data-text-less="닫기"><a class="btn-toggle-moreless">더보기</a>
-        <div class="moreless-content">
-            <p data-ke-size="size16">[TIP]튜플tuple이란</p>
-            <p data-ke-size="size16">파이썬에서 제공하는 자료형으로 리스트와 튜플 모두 순서가 있는 원소를 가지지만 튜플은 한번 생성되면 원소를 수정할수 없다. 그래서 매개변수 값으로
-                많이 사용한다.</p>
-        </div>
+    <div class="moreless-content">
+    <p data-ke-size="size16">[TIP]튜플tuple이란</p>
+    <p data-ke-size="size16">파이썬에서 제공하는 자료형으로 리스트와 튜플 모두 순서가 있는 원소를 가지지만 튜플은 한번 생성되면 원소를 수정할수 없다. 그래서 매개변수 값으로 많이 사용한다.</p>
+    </div>
     </div>
     <p data-ke-size="size16">&nbsp;</p>
-    <p data-ke-size="size16">파이썬에서 제공하는 numpy의 column_stack을 활용하면 특성데이터를 모아서 머신러닝 학습을 위한 입력데이터로 쉽게 만들 수 있다. 물고기의 길이와 무게
-        데이터를 가지고 만든 예시 코드는 아래와 같다.</p>
-    <div class="colorscripter-code"
-        style="color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto;">
-        <table class="colorscripter-code-table"
-            style="margin: 0; padding: 0; border: none; background-color: #fafafa; border-radius: 4px;" cellspacing="0"
-            cellpadding="0" data-ke-align="alignLeft">
-            <tbody>
-                <tr>
-                    <td style="padding: 6px; border-right: 2px solid #e5e5e5;">
-                        <div
-                            style="margin: 0; padding: 0; word-break: normal; text-align: right; color: #666; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
-                            <div style="line-height: 130%;">1</div>
-                            <div style="line-height: 130%;">2</div>
-                            <div style="line-height: 130%;">3</div>
-                            <div style="line-height: 130%;">4</div>
-                            <div style="line-height: 130%;">5</div>
-                            <div style="line-height: 130%;">6</div>
-                            <div style="line-height: 130%;">7</div>
-                        </div>
-                    </td>
-                    <td style="padding: 6px 0; text-align: left;">
-                        <div
-                            style="margin: 0; padding: 0; color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span
-                                    style="color: #a71d5d;">import</span>&nbsp;numpy&nbsp;<span
-                                    style="color: #a71d5d;">as</span>&nbsp;np</div>
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;">np.column_stack(([<span
-                                    style="color: #0099cc;">1</span>,<span style="color: #0099cc;">2</span>,<span
-                                    style="color: #0099cc;">3</span>],&nbsp;[<span
-                                    style="color: #0099cc;">4</span>,<span style="color: #0099cc;">5</span>,<span
-                                    style="color: #0099cc;">6</span>]))&nbsp;<span
-                                    style="color: #999999;">#연결할&nbsp;리스트를&nbsp;파이썬&nbsp;튜플&nbsp;tuple로&nbsp;전달</span>
-                            </div>
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span
-                                    style="color: #999999;">#for문을&nbsp;이용한&nbsp;입력데이터&nbsp;만들기,&nbsp;행을&nbsp;샘플&nbsp;열을&nbsp;특성으로&nbsp;만드는&nbsp;작업이다.</span>
-                            </div>
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;">fish_data&nbsp;<span
-                                    style="color: #0086b3;"></span><span
-                                    style="color: #a71d5d;">=</span>&nbsp;[[l,&nbsp;w]&nbsp;<span
-                                    style="color: #a71d5d;">for</span>&nbsp;l,&nbsp;w&nbsp;<span
-                                    style="color: #a71d5d;">in</span>&nbsp;zip(fish_length,&nbsp;fish_weight)]</div>
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span
-                                    style="color: #999999;">#numpy를&nbsp;활용한&nbsp;입력데이터&nbsp;만들기</span></div>
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;">fish_data&nbsp;<span
-                                    style="color: #0086b3;"></span><span
-                                    style="color: #a71d5d;">=</span>&nbsp;np.column_stack((fish_length,&nbsp;fish_weight))
-                            </div>
-                            <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span
-                                    style="color: #066de2;">print</span>(fish_data[:<span
-                                    style="color: #0099cc;">5</span>])</div>
-                        </div>
-                        <div
-                            style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic;">
-                            <a style="color: #e5e5e5text-decoration:none;" href="http://colorscripter.com/info#e"
-                                target="_blank" rel="noopener">Colored by Color Scripter</a>
-                        </div>
-                    </td>
-                    <td style="vertical-align: bottom; padding: 0 2px 4px 0;"><a
-                            style="text-decoration: none; color: white;" href="http://colorscripter.com/info#e"
-                            target="_blank" rel="noopener"><span
-                                style="font-size: 9px; word-break: normal; background-color: #e5e5e5; color: white; border-radius: 10px; padding: 1px;">cs</span></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <p data-ke-size="size16">파이썬에서 제공하는 numpy의 column_stack을 활용하면 특성데이터를 모아서 머신러닝 학습을 위한 입력데이터로 쉽게 만들 수 있다. 물고기의 길이와 무게 데이터를 가지고 만든 예시 코드는 아래와 같다.</p>
+    <div class="colorscripter-code" style="color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto;">
+    <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #fafafa; border-radius: 4px;" cellspacing="0" cellpadding="0" data-ke-align="alignLeft">
+    <tbody>
+    <tr>
+    <td style="padding: 6px; border-right: 2px solid #e5e5e5;">
+    <div style="margin: 0; padding: 0; word-break: normal; text-align: right; color: #666; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
+    <div style="line-height: 130%;">1</div>
+    <div style="line-height: 130%;">2</div>
+    <div style="line-height: 130%;">3</div>
+    <div style="line-height: 130%;">4</div>
+    <div style="line-height: 130%;">5</div>
+    <div style="line-height: 130%;">6</div>
+    <div style="line-height: 130%;">7</div>
     </div>
-    <p data-ke-size="size16">데이터가 작은 경우 리스트와 넘파이를 사용하는게 큰 차이가 없지만 큰 데이터를 처리할 때는 넘파이를 쓰는게 효율적이다. 넘파이 배열은 핵심 부분이 C, C++과
-        같은 저수준 언어로 개발되어 성능이 좋고, 데이터 과학에 최적화 되어있기 때문이다.</p>
+    </td>
+    <td style="padding: 6px 0; text-align: left;">
+    <div style="margin: 0; padding: 0; color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span style="color: #a71d5d;">import</span>&nbsp;numpy&nbsp;<span style="color: #a71d5d;">as</span>&nbsp;np</div>
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;">np.column_stack(([<span style="color: #0099cc;">1</span>,<span style="color: #0099cc;">2</span>,<span style="color: #0099cc;">3</span>],&nbsp;[<span style="color: #0099cc;">4</span>,<span style="color: #0099cc;">5</span>,<span style="color: #0099cc;">6</span>]))&nbsp;<span style="color: #999999;">#연결할&nbsp;리스트를&nbsp;파이썬&nbsp;튜플&nbsp;tuple로&nbsp;전달</span></div>
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span style="color: #999999;">#for문을&nbsp;이용한&nbsp;입력데이터&nbsp;만들기,&nbsp;행을&nbsp;샘플&nbsp;열을&nbsp;특성으로&nbsp;만드는&nbsp;작업이다.</span></div>
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;">fish_data&nbsp;<span style="color: #0086b3;"></span><span style="color: #a71d5d;">=</span>&nbsp;[[l,&nbsp;w]&nbsp;<span style="color: #a71d5d;">for</span>&nbsp;l,&nbsp;w&nbsp;<span style="color: #a71d5d;">in</span>&nbsp;zip(fish_length,&nbsp;fish_weight)]</div>
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span style="color: #999999;">#numpy를&nbsp;활용한&nbsp;입력데이터&nbsp;만들기</span></div>
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;">fish_data&nbsp;<span style="color: #0086b3;"></span><span style="color: #a71d5d;">=</span>&nbsp;np.column_stack((fish_length,&nbsp;fish_weight))</div>
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span style="color: #066de2;">print</span>(fish_data[:<span style="color: #0099cc;">5</span>])</div>
+    </div>
+    <div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic;"><a style="color: #e5e5e5text-decoration:none;" href="http://colorscripter.com/info#e" target="_blank" rel="noopener">Colored by Color Scripter</a></div>
+    </td>
+    <td style="vertical-align: bottom; padding: 0 2px 4px 0;"><a style="text-decoration: none; color: white;" href="http://colorscripter.com/info#e" target="_blank" rel="noopener"><span style="font-size: 9px; word-break: normal; background-color: #e5e5e5; color: white; border-radius: 10px; padding: 1px;">cs</span></a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <p data-ke-size="size16">데이터가 작은 경우 리스트와 넘파이를 사용하는게 큰 차이가 없지만 큰 데이터를 처리할 때는 넘파이를 쓰는게 효율적이다. 넘파이 배열은 핵심 부분이 C, C++과 같은 저수준 언어로 개발되어 성능이 좋고, 데이터 과학에 최적화 되어있기 때문이다.</p>
     <p data-ke-size="size16">&nbsp;</p>
     <h4 data-ke-size="size20">사이킷런으로 훈련 세트와 테스트 세트 나누기</h4>
     <p data-ke-size="size16">사이킷런에서 제공하는 <b>train_test_split()</b>함수를 사용하면 데이터 세트를 알아서 섞은 후 훈련 세트와 테스트 세트로 나눠줍니다.</p>
+    <p data-ke-size="size16">&nbsp;</p>
+    <h4 data-ke-size="size20">데이터 전처리의 필요성</h4>
+    <p data-ke-size="size16">혼공머신 ch1~2에서 학습중인 데이터는 빙어와 도미 길이, 무게 데이터입니다. 위에서 설명한 방법대로 훈련 데이터와 시험 데이터로 나누기만 하면 데이터 전처리가 끝나지 않습니다. 바로 <b>스케일Scale</b> 문제가 있습니다. 아래 그래프로 보겠습니다. 그림1은 데이터를 그냥 산점도 함수로 그린 결과이고 그림2는 scale을 1000으로 맞춰준 그래프입니다. 다시 말하면 그림 1은 우리가 물고기를 무게와 길이로 구별할때의 기준이고 그림2가 K최근접이웃 알고리즘이 구별할때의 기준입니다. 이런 모습이면 물고기의 길이는 판단에 거의 영향을 미치지 못하는 문제가 발생합니다. 이를 <b>두 특성의 스케일Scale이 다르다</b>고 표현합니다.</p>
+    <p data-ke-size="size16"><span style="color: #ee2323;"><b>[ch2_graph_org.png] [ch2_graph_scale.png] 그림 추가</b></span></p>
+    <p data-ke-size="size16">이런 문제를 해결하기 위해서 데이터 전처리data preprocessing이 필요하고 가장 널리 사용하는 방법 중 하나가 <b>표준점수standard score</b> 혹은 z score 라고 부르는 방법입니다. 대부분의 머신러닝 알고리즘은 특성의 스케일이 다르면 원하는대로 작동하지 않기 때문에 제대로된 데이터 전처리가 필요합니다. <b>주의할 점은 훈련 세트와 시험 세트 모두 동일한 방식(동일한 통계값)으로 변환해야 한다는 것입니다.</b> 훈련세트 변환시 사용했던 통계값인 평균값과 표준편차 값이 있습니다. 이 평균값과 표준편차 값을 테스트세트에 동일하게 적용해야 한다는 말입니다. <b>그럼 아래 그림을 통해 <span>스케일 변환을 통한 데이터 </span>전처리 전과 후에 K최근접 알고리즘이 어떻게 동작하는지 비교해보겠습니다.</b></p>
+    <p data-ke-size="size16">&nbsp;</p>
+    <p data-ke-size="size16"><span style="color: #ee2323;"><b>[ch2_graph_KNorg.png] [ch2_graph_KNscaled.png] 그림 추가</b></span></p>
+    <p data-ke-size="size16">그림 3과 그림 4를 보시면 스케일 변환 전과 후의 K최근접 이웃 알고리즘의 샘플데이터 이웃 판단 결과를 볼 수 있습니다. 주황색으로 표시된 샘플데이터가 있고 초록색으로 표시된 5개의 이웃 표시가 표준점수 계산 전 후 달라진 것을 확인 할 수 있습니다. 머신러닝을 적용할 수 있는 데이터는 표준점수만 잘 활용하여 데이터 전처리를 하면 대부분 잘 작동하기 때문에 알아두고 유용하게 사용하시기 바랍니다.</p>
+    <h2 data-ke-size="size26">참고</h2>
+    <p data-ke-size="size16"><b>train_test_split() 함수</b></p>
+    <p data-ke-size="size16">데이터를 훈련세트와 테스트 세트로 나누는 함수로 나누는 기본 비율은 25%이다. <b>shuffle</b> 매개변수로 나누기 전 섞을지 여부 결정 가능하며 기본값은 true이다. <b>stratify</b> 매개변수에 클래스 레이블이 담긴 배열(타깃 데이터)를 전달하면 클래스 비율에 맞게 나눈다.</p>
+    <p data-ke-size="size16"><b>kneighbors()메서드</b></p>
+    <p data-ke-size="size16">KNeighborsClassfier 클래스에서 제공, 주어진 샘플에서 가장 가까운 이웃을 찾아서 거리와 인덱스 반환</p>
+    <div class="colorscripter-code" style="color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto;">
+    <table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #fafafa; border-radius: 4px;" cellspacing="0" cellpadding="0" data-ke-align="alignLeft">
+    <tbody>
+    <tr>
+    <td style="padding: 6px; border-right: 2px solid #e5e5e5;">
+    <div style="margin: 0; padding: 0; word-break: normal; text-align: right; color: #666; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
+    <div style="line-height: 130%;">1</div>
+    </div>
+    </td>
+    <td style="padding: 6px 0; text-align: left;">
+    <div style="margin: 0; padding: 0; color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
+    <div style="padding: 0 6px; white-space: pre; line-height: 130%;">distances,&nbsp;indexes&nbsp;<span style="color: #0086b3;"></span><span style="color: #a71d5d;">=</span>&nbsp;kn.kneighbors([[<span style="color: #0099cc;">25</span>,&nbsp;<span style="color: #0099cc;">150</span>]])</div>
+    </div>
+    </td>
+    <td style="vertical-align: bottom; padding: 0 2px 4px 0;"><a style="text-decoration: none; color: white;" href="http://colorscripter.com/info#e" target="_blank" rel="noopener"><span style="font-size: 9px; word-break: normal; background-color: #e5e5e5; color: white; border-radius: 10px; padding: 1px;">cs</span></a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <p data-ke-size="size16"><b>표준점수Standard score</b></p>
+    <p data-ke-size="size16">각 특성값이 평균에서 표준편차의 몇 배만큼 떨어져 있는지 나타내는 점수. 평균을 빼고 표준편차를 나눈다. <b>np.mean() </b>함수로 평균계산, <b>np.std()</b> 함수로 표준편차를 계산한다.</p>
+    <p data-ke-size="size16">&nbsp;</p>
     <p data-ke-size="size16">&nbsp;</p>
 </body>
