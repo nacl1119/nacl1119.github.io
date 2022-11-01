@@ -2,17 +2,46 @@
 <p data-ke-size="size16">핵심키워드: 다중 회귀, 특성 공학, 릿지, 라쏘 하이퍼파라미터</p>
 <p data-ke-size="size16">여러 특성을 사용한 다중 회귀에 대해 배우고 사이킷런의 여러 도구를 사용해 봅니다. 복잡한 모델의 과대적합을 막기위한 릿지와 라쏘 회귀를 배웁니다.</p>
 <h3 data-ke-size="size23">다중회귀</h3>
-<p data-ke-size="size16">다중회귀란, 특성공학이란</p>
+<p data-ke-size="size16"><b>다중회귀 multiple regression</b>란 여러 개의 특성을 사용한 선형 회귀를 말합니다. 혼공머신에서 계속 예로 들고 있는 물고기만 하더라도 길이외에 높이와 두께까지 물고기의 특성으로 사용할 수 있고 이런 여러 특성을 사용해 다중회귀로 고차항을 학습 시킬 수 있습니다. 길이와 높이를 곱해서 면적이라는 새로운 특성을 만들어 낼 수 있는데 이를 <b>특성공학 feature engineering</b> 이라고 합니다.</p>
 <h3 data-ke-size="size23">데이터 준비</h3>
-<p data-ke-size="size16">판다스 사용, 데이터프레임, 많은양의 데이터를 csv 로 읽어오기</p>
+<p data-ke-size="size16">우리가 직접 데이터를 제곱하거나 데이터간 곱을 처리할 수 있지만 파이썬 라이브러리인 <b>판다스 pandas</b> 라이브러리를 사용하면 간단히 할 수 있습니다. <b>데이터프레임 dataframe</b> 은 판다스의 핵심 데이터 구조로 넘파이 배열처럼 다차원 배열을 처리하고 더 많은 기능을 제공합니다. 주로 csv형태로 활용해 많은 양의 데이터를 읽어옵니다.</p>
 <h3 data-ke-size="size23">사이킷럿의 변환기</h3>
-<p data-ke-size="size16">특성 전처리를 위한 변환기 클래스</p>
+<p data-ke-size="size16">특성을 만들거나 전처리를 위해 사이킷런에서 제공하는 클래스를 <b>변환기 transformer</b>라고 부릅니다. 이번 절에서는 PlynomialFeature 클래스를 사용합니다. 변환기는 입력받은 특성을 <b>훈련 fit()</b> 한 후에 <b>변환 transform()</b> 합니다. 변환 결과를 get_featrue_names_out() 메서드를 통해 확인 가능한데 이런 결과가 나옵니다.</p>
+<p style="text-align: center;" data-ke-size="size16"><b><span style="background-color: #ffffff; color: #212121;">['x0' 'x1' 'x2' 'x0^2' 'x0 x1' 'x0 x2' 'x1^2' 'x1 x2' 'x2^2']</span></b></p>
+<p data-ke-size="size16"><span style="background-color: #ffffff; color: #212121;">여기서 x0, x1, x2는 첫 번째, 두 번째, 세 번째 특성을 의미하고 각 특성을 제곱 하거나 특성끼리 곱하는 방식으로 변환 된 것을 알 수 있습니다. 주의할 점은 훈련 후 변환하기 때문에 <b>훈련 세트로 학습시킨 변환기를 사용하여 테스트 세트를 변환해야한다는것 입니다.</b></span></p>
 <h3 data-ke-size="size23">다중 회귀 모델 훈련하기</h3>
-<p data-ke-size="size16">특성 개수가 늘어나면서 선형모델이 강력해졌지만 과대적합 문제가 발생합니다.</p>
+<p data-ke-size="size16">변환기를 통해 특성 개수가 늘어나면 선형모델을 훈련 세트에 대해 더 강력하게 학습시킬수 있습니다. PolynomialFeature클래스의 <b>degree</b> 매개변수를 통해 다항식의 차수를 증가 시킬수 있습니다. 하지만 지나치게 높은 고차항으로 훈련 세트를 학습시키면 테스트 세트에 대해서는 형편없는 결정계수가 나오게 되는 과대적합 문제가 발생합니다.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="width: 33.3333%;">구분</td>
+<td style="width: 33.3333%;">훈련 세트 결정계수</td>
+<td style="width: 33.3333%;">테스트 세트 결정계수</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">단일 특성 다항 회귀</td>
+<td style="width: 33.3333%;"><span style="background-color: #ffffff; color: #212121;">0.9706807451768623&nbsp;</span></td>
+<td style="width: 33.3333%;"><span style="background-color: #ffffff; color: #212121;">0.9775935108325122</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">변환기 적용 다중 회귀</td>
+<td style="width: 33.3333%;"><span style="background-color: #ffffff; color: #212121;">0.9903183436982124&nbsp;</span></td>
+<td style="width: 33.3333%;"><span style="background-color: #ffffff; color: #212121;">0.9714559911594134</span></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">5차항(degree=5) 적용</td>
+<td style="width: 33.3333%;"><span style="background-color: #ffffff; color: #212121;"><span style="background-color: #ffffff; color: #212121;">0.9999999999991097&nbsp;</span></span></td>
+<td style="width: 33.3333%;"><span style="background-color: #ffffff; color: #212121;"><span style="background-color: #ffffff; color: #212121;">-144.40579242684848</span></span></td>
+</tr>
+</tbody>
+</table>
 <h3 data-ke-size="size23">규제</h3>
-<p data-ke-size="size16">복잡도를 낮추도록 규제regulation</p>
-<h3 data-ke-size="size23">릿지 회귀와 라쏘 회귀</h3>
-<p data-ke-size="size16">릿지와 라쏘</p>
-<h3 data-ke-size="size23"><b>모델의 과대적합을 제어하기</b></h3>
+<p data-ke-size="size16">모델의 복잡도를 낮추도록 <b>규제 regularization</b> 하면 과대적합되지 않도록 할 수 있습니다. 그런데 규제 하기전 2장에서 다뤘던것 처럼 특성의 스케일이 정규화되지 않으면 다항식 계수값(기울기)에서 이미 차이가 발생합니다. 따라서 <b>규제를 적용하기 전에 정규화</b>를 해야합니다. 평균과 표준편차와 표준점수를 활용하는 방법외에도 사이킷런에서 제공하는 변환기 중 하나인 <b>StandardScaler 클래스</b>를 사용하여 정규화 할 수 있습니다. 정규화된 데이터가 준비되었으면 규제가 추가된 선형 회귀 모델을 사용하면 됩니다. 규제가 추가되 두 모델을 <b>릿지 rigde, 라쏘 lasso</b> 라고 합니다. <b>릿지는 계수를 제곱한 값을 기준으로 규제를 적용하고 라쏘는 계수의 절댓값을 기준으로 규제합니다.</b></p>
 <p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">릿지 회귀와 라쏘 회귀</h3>
+<p data-ke-size="size16">릿지와 라쏘는 규제가 적용된 모델로 선형 회귀를 위한 다항식의 계수를 규제하여 복잡도를 낮춥니다. 이때 규제의 강도는 각 클래스의 alpah 매개변수로 조절할 수 있습니다.</p>
+<h3 data-ke-size="size23">모델의 과대적합을 제어하기</h3>
+<h2 data-ke-size="size26">참고</h2>
+<p data-ke-size="size16"><b>하이퍼파라미터 hyperparameter</b></p>
+<p data-ke-size="size16">릿지, 라쏘 모델 사용시 사용자가 직접 지정해야하는 alpha 매개변수, 변환기 사용시 입력하는 degree 와 같이 사람이 알려줘야 하는 파라미터</p>
 <p data-ke-size="size16">&nbsp;</p>
