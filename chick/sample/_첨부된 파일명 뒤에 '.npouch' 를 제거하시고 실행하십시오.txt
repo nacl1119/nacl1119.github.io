@@ -1,0 +1,3 @@
+- Note
+  실행 파일명(파일명.exe.npouch) 뒤에 .npouch 를 추가 하였습니다.
+  .npouch 를 제거하시고 실행하십시오.
