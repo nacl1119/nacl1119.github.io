@@ -1,0 +1,48 @@
+<div><a href="HONML_CH3-1.html">이전 챕터 이동</a><a href="index.html"> 메인으로</a><a href="HONML_CH3-3.html"> 다음 챕터 이동</a></div>
+
+<h2 data-ke-size="size26"><b>[글제목]03-2 선형회귀</b></h2>
+<p data-ke-size="size16">핵심 키워드: 선형 회귀, 계수 또는 가중치, 모델 파라미터, 다항 회귀</p>
+<p data-ke-size="size16">k-최근접 이웃 회귀와 선형 회귀 알고리즘의 차이를 이해하고 사이킷런을 사용해 여러가지 선형 회귀 모델을 만들어 봅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h3 data-ke-size="size23">k-최근접 이웃의 한계</h3>
+<p data-ke-size="size16">k-최근접이웃 회귀는 가장 가까운 샘플을 찾아 타깃을 평균하기 때문에 새로운 샘플이 훈련 세트 범위를 벗어나면 엉뚱한 값을 예측할 수 있습니다. 아래 그림1 을 보시죠</p>
+<p data-ke-size="size16"><span style="color: #ee2323;"><b>[ch3-2 fig1 농어 그래프] 그림추가</b></span></p>
+<p data-ke-size="size16">그림1에서 초록색이 무게를 예측하려던 샘플인데 x축 값인 길이가 증가할 수록 y축 값인 무게가 증가하는 경향에서 벗어나서 예측된 것을 볼 수 있습니다. 주확색점을 보면 k-최근접 이웃 회귀 알고리즘이 예측을 위해 선택한 이웃 3개가 가진 무게값 평균을 취했기 때문인 것을 알 수 있습니다. 이 상황에서는 더 긴 샘플을 예측하려해도 계속 1033g 만 결과로 나오게 됩니다.</p>
+<h3 data-ke-size="size23">선형회귀</h3>
+<p data-ke-size="size16">선형회귀Linear regression는 대표적인 회귀 알고리즘으로 특성이 하나인 경우 어떤 직선을 학습하는 알고리즘입니다. 사이킷런은 sklearn.linear_model 패키지에 LinearRegression 클래스로 선형 회귀 알고리즘을 구현해 놓았습니다. 선형 회귀 알고리즘은 그래프 y=a*x+b의 기울기 a와 절편 값 b를 구합니다. 이때 a는 coef_속성으로, b는 intercept_ 속성으로 저장되어 있습니다. 이 두 가지 속성을 머신러닝 알고리즘이 찾은 값이라는 의미로 <b>모델 파라미터(model parameter)</b>라고 부르며, 선형 회귀 알고리즘처럼 모델 파라미터를 이용한 학습 방식을<b> 모델 기반 학습</b>이라고 부릅니다. 그림2는 선형 회귀 알고리즘의 예시입니다.</p>
+<p data-ke-size="size16"><span style="color: #ee2323;"><b>[그림2] 추가</b></span></p>
+<h3 data-ke-size="size23">다항회귀</h3>
+<p data-ke-size="size16">대부분의 경우 직선이 아닌 곡선으로 예측하는게 더 정확할 수 있습니다. 다항식을 사용한 선형 회귀를<span>&nbsp;</span><b>다항회귀 polynomial regression</b><span>&nbsp;</span>라고 하며 이것을 사용합니다. 다항회귀를 위해서는 x축이 되는 값, 혼공머신 책에서는 생선의 길이의 제곱 값이 필요합니다. 타깃값은 훈련의 목표가 되는 값이므로 그대로 사용하면 됩니다.</p>
+<p data-ke-size="size16">[그림3]추가</p>
+<p data-ke-size="size16">그림 3을보시면 다항식을 활용하여 훈련 세트의 경향을 더 잘 따르는 그래프가 그려진 것을 볼 수있습니다. 단항식 선형 회귀와 마찮가지로 학습을 통해 도출된 계수와 절편을 LinearRegression 클래스에 제공하는 <b>coef_, intercept_</b> 속성으로 확인할 수 있습니다.&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">참고</h2>
+<p data-ke-size="size16"><b>LinearRegression클래스</b></p>
+<p data-ke-size="size16">사이킷 런에서 제공하는 선형 회귀 알고리즘. 아래와 같이 사용 가능하다.</p>
+<div class="colorscripter-code" style="color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position: relative !important; overflow: auto;">
+<table class="colorscripter-code-table" style="margin: 0; padding: 0; border: none; background-color: #fafafa; border-radius: 4px;" cellspacing="0" cellpadding="0" data-ke-align="alignLeft">
+<tbody>
+<tr>
+<td style="padding: 6px; border-right: 2px solid #e5e5e5;">
+<div style="margin: 0; padding: 0; word-break: normal; text-align: right; color: #666; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
+<div style="line-height: 130%;">1</div>
+<div style="line-height: 130%;">2</div>
+</div>
+</td>
+<td style="padding: 6px 0; text-align: left;">
+<div style="margin: 0; padding: 0; color: #010101; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height: 130%;">
+<div style="padding: 0 6px; white-space: pre; line-height: 130%;"><span style="color: #a71d5d;">from</span>&nbsp;sklearn.linear_model&nbsp;<span style="color: #a71d5d;">import</span>&nbsp;LinearRegression</div>
+<div style="padding: 0 6px; white-space: pre; line-height: 130%;">&nbsp;</div>
+</div>
+<div style="text-align: right; margin-top: -13px; margin-right: 5px; font-size: 9px; font-style: italic;"><a style="color: #e5e5e5text-decoration:none;" href="http://colorscripter.com/info#e" target="_blank" rel="noopener">Colored by Color Scripter</a></div>
+</td>
+<td style="vertical-align: bottom; padding: 0 2px 4px 0;"><a style="text-decoration: none; color: white;" href="http://colorscripter.com/info#e" target="_blank" rel="noopener"><span style="font-size: 9px; word-break: normal; background-color: #e5e5e5; color: white; border-radius: 10px; padding: 1px;">cs</span></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>모델 기반 학습</b></p>
+<p data-ke-size="size16">모델 파라미터를 활용하여 훈련, 예측하는 머신러닝 알고리즘의 학습 방법. 대표적으로 선형 회귀 알고리즘이 있다. k-최근접 이웃처럼 훈련세트를 저장만 하는 것은 <b>사례 기반 학습</b>이라고 부른다.</p>
+<h3 data-ke-size="size23">&nbsp;</h3>

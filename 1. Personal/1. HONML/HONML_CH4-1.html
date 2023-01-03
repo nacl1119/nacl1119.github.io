@@ -1,0 +1,15 @@
+<body>
+<p data-ke-size="size16">[제목] Chapter 4. 다양한 분류 알고리즘(1/2) - 로지스틱 회귀</p>
+<p data-ke-size="size16">핵심키워드: 로지스틱 회귀, 다중 분류, 시그모이드 함수, 소프트맥스 함수</p>
+<p data-ke-size="size16">로지스틱 회귀 알고리즘을 배우고 이진 분류 문제에서 클래스 확률을 예측합니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">럭키백의 확률</h2>
+<p data-ke-size="size16">럭키백에는 무엇이 들어있는지 알 수 없습니다. 기존에 럭키백을 미리 구매한 사람들이 구매한 결과를 기반으로 다음 럭키백에 어떤 물건이 어떤 확률로 들어있는지 판단할 수 있을까요? K-최근접 이웃 분류기 K-NeighborsClassifier를 사용하면 근접한 이웃들이 각각 어떤 확률로 분포되어 있는지 알 수 있습니다. 그런데 럭키백에 두개보다 많은 여러 품목이 들어있다면 여러개의 클래스를 분류해야 하는 것을 의미합니다. 이렇게 2개 이상의 클래스를 분류하는 것을 <b>다중 분류 multiclass classification</b> 이라고 부릅니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<h2 data-ke-size="size26">로직스틱 회귀</h2>
+<p data-ke-size="size16"><b>로지스틱 회귀 logistic regression</b> 는 이름은 회귀지만 분류 모델입니다. 선형 회귀와 같이 입력 데이터의 특성에 대한 훈련 결과로 방정식 계수와 절편을 도출합니다.</p>
+<p data-ke-size="size16">[ 방정식의 예 z = a*(Weight) + b*(Length) + c*(Diagonal) + d*(Height) + e*(Width) +f ]</p>
+<p data-ke-size="size16">방정식의 결과값 z는 어떤 값 될 수 있는데 우리는 확률을 구하고 싶기 때문에 0~1 값 (0~100%) 값이 필요합니다. 이렇게 값의 분포가 나올 때 0~1으로 정규화 할 수 있는 방법이&nbsp;<b>시그모이드 함수 sigmoid function</b> 혹은 <b>로지스틱 함수 logistic function</b> 라고 부르는 방법입니다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+</body>
