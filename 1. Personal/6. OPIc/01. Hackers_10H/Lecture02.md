@@ -1,7 +1,7 @@
 # [오픽 독학러라면 필수시청!! 딱 10시간만 공부하고 오픽 AL 받아봅시다!! 오픽 기출문제 모음zipㅣ해커스오픽 클라라](https://www.youtube.com/watch?v=ZcGILR6X7y4)
 
 
-[<< 이전강의](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%02Hackers_10H/Lecture01.md) | [다음강의 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%02Hackers_10H/Lecture03.md)
+[<< 이전강의](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture01.md) | [다음강의 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture03.md)
 
 ## [**[3] Q10 You indicated in the survey that you take domestic trips. Tell me bout a city that you often visit. What does it look like and what do you usually[^1] do there? Who do you go with? Give me all the details.**](https://youtu.be/ZcGILR6X7y4?t=965)
 **Needless to say**, my **number one place** to travel is Busan. I usually go there once a year to **refresh my mind** from **the hustle and bustle of life**. My friend, Erin usually joins me when I go. **Before going on a trip**, I usually **search information online** and **read every single line of it** to be **fully prepared**. During the trip, we do various activites to **make the most of** our trip.  
