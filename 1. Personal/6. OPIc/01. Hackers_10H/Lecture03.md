@@ -1,7 +1,7 @@
 # [오픽 독학러라면 필수시청!! 딱 10시간만 공부하고 오픽 AL 받아봅시다!! 오픽 기출문제 모음zipㅣ해커스오픽 클라라](https://www.youtube.com/watch?v=ZcGILR6X7y4)
 
 
-[<< 이전강의](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%02Hackers_10H/01.%20Lecture02.md) | [다음강의 >>]()
+[<< 이전강의](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%02Hackers_10H/Lecture02.md) | [다음강의 >>]()
 
 ## [**[5] Q10 In your background, you indicated that you like to jog. How ofen do you usually go jogging? Where do you like to go? Please describe your routine in detail.**](https://youtu.be/ZcGILR6X7y4?t=2150)
 **I normally** go jogging(hiking) **once a week**. I also go whenever I am **stressed out**. I usually go with my friends fo family but when they are busy I go there by myself. When I **get there**, I **jog for an hour**. It helps me **feel refreshed** and then, I sit down on a bench and **admire the view**.  
@@ -13,6 +13,8 @@
 
 ## [**[7] Q12 You indicated in the survey that you like walking. Why do you walk? How does walking make you feel?**](https://youtu.be/ZcGILR6X7y4?t=3108)
 **There are several reasons why I like** walking. **well**.. walking helps my blood circulation and it also gives me time to **meditate**. **Therer is another important reason**. **I believe that** it's a good way to **stay fit**. (I love walking)
+
+
 
 ## **[8] Q10 (past tense routine)You indicated in the survey that you like to stay at home during your vacations. What kind of activities did you do during your last home vacation and when  was it? Describe what you did in detail.**
 My last **stay-at-home vacation was a couple of weeks ago**. It was a **week-long vacation**. Right before the vacation, I was really **tied up with work** so I desperately wanted to **kick back and relax**. Since I didn't want to anything productive, I first **slept in** till noon and became **a couch potato** for a few days. **I felt like a million dollars** while watching TV with beers.  

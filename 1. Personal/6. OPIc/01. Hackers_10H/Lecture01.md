@@ -1,6 +1,6 @@
 # [오픽 독학러라면 필수시청!! 딱 10시간만 공부하고 오픽 AL 받아봅시다!! 오픽 기출문제 모음zipㅣ해커스오픽 클라라](https://www.youtube.com/watch?v=ZcGILR6X7y4)
 
-[다음강의 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/02.%20Lecture02.md)
+[다음강의 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture02.md)
 
 ## [**[1] Q10 You indicated in the survey that you like to go to a park. Compare the activities that children do at the park with the activities adults do at the park. How are they similar or different? Give as many details as possible.**](https://youtu.be/ZcGILR6X7y4?t=70) 
 **umm.. wow, this question is really difficult and I haven't thougt about it but I will try my best to answer**. Both adults and kids really enjoy the beautiful view and fresh air at the park, but **I think there are so many diffences between** what kids and adults do at the park. **I mean**, adults including myself are tired **every single day** so we just want to **chill out**. Stuffs we do include **soaking up the sunlight**, having lunch by the water and of cource having chicken and beer. (It's the best combination right?) What kids do at the park are **totally different**. They are like little monsters! They **run around, play hide and seek**! They never get tired! I sometiems want to have the energy that kids have! **Anyways, I think these are the differences between** what kids and adults do at the park.
