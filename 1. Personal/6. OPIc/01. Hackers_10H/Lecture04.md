@@ -20,7 +20,7 @@ But after the COVID-19 pandemic, we can no longer travel abroad. **In fact**, we
 [1] If there is "usually" in the question, answer using present tense.  
 [2] Seperate the topics in the answer. For example, in a trip question, it's better to talk about the preparation, activities, foods in the trip.
 
-## Dictionary
+## Vocabulary
  * toiletries 세면도구
  * it's a piece of cake 너무 쉬운 일이다. 누워서 떡먹기
  * freezing cold outside.

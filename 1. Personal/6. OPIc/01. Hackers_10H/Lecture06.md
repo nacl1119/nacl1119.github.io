@@ -1,6 +1,6 @@
 # [오픽 독학러라면 필수시청!! 딱 10시간만 공부하고 오픽 AL 받아봅시다!! 오픽 기출문제 모음zipㅣ해커스오픽 클라라](https://www.youtube.com/watch?v=ZcGILR6X7y4)
 
-[<< 5강](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture05.md) | [7강 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture06.md)
+[<< 5강](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture05.md) | [7강 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%20Hackers_10H/Lecture07.md)
 
 ## [**[14] Q10 You indicated that you like to cook. What do you like to cook the most? Why do you like cooking that meal? How do you make it? How does it taste? Give me all the details.**](https://youtu.be/ZcGILR6X7y4?t=7349)
 
@@ -44,8 +44,6 @@ We started **talking about our days** and the conversataion **went on and on**. 
 [요리 결과]  
 When **I went to ckeck on it**, it was totally burned. So, I had to throw it away. I leared a lesson. You should **fully focus on cooking**.
 
-
-https://youtu.be/ZcGILR6X7y4?t=8660
 ## DICTIONANRY
 * become interested in ~에 흥미를 가지다.
 * Talking on the phone.
