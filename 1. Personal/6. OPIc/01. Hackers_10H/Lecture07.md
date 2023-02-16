@@ -58,4 +58,3 @@ Instead, I will talk about **the last time** I went hiking.
 * the last time
 
 
-https://youtu.be/ZcGILR6X7y4?t=10176
