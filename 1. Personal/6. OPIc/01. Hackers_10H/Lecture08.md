@@ -35,13 +35,12 @@
 * I go with my friends or family but when they are busy I go there by myself.
 
 [시작문장]  
-**I think** I wear differently **according to different seasons when I go hiking.    
+**I think** I wear differently **according to** different seasons when I go hiking.    
 [봄 가을 / 여름 / 겨울]  
 It's really cool and mild **all day long** in spring and fall so I wear light clothes.  
 But **in summber**, it's **scorching hot** and I **sweat a lot** so I wear T-shirt and shorts.  
 **It's the opposite** in winter. It's **freezing cold** so I wear **multiple layers of clothes** and a jumper **as well**.
-[과정]  
-First I need **to stuff the chicken with** sticky rice and ginseng. I need to put jujubes(대추) and garlic. I **boil it for about an hour** and it's done! You can **season it with salt and pepper** and eat the chicken with Kimchi.
+
 
 ## [**[22] Q3 Please tell me about a time something intresting or unexpectedhappend at the park. Where and when did it occur? What were you doing at the time?**](https://youtu.be/ZcGILR6X7y4?t=10729)
 
@@ -67,4 +66,3 @@ Instead, I will talk about **the last time** I went hiking.
 ## Vocabulary
 
 
-https://youtu.be/ZcGILR6X7y4?t=11167
