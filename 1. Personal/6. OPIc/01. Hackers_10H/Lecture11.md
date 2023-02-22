@@ -25,7 +25,7 @@ Could you tell me **where the toilet is**?
 OK! Thank you so much for your help! Bye!
 
 
-## [**[27] Q2 I am so sorry but there is a situation I need you resolve. Your card is stuck in the ATM machine. Please call the bank, explain the situation and give 2 solutions to solve the problem.**](https://youtu.be/ZcGILR6X7y4?t=14408)
+## [**[29] Q2 I am so sorry but there is a situation I need you resolve. Your card is stuck in the ATM machine. Please call the bank, explain the situation and give 2 solutions to solve the problem.**](https://youtu.be/ZcGILR6X7y4?t=14408)
 
 * 문제유형: 롤플레잉 2단계
   * 문제 상황을 주고 해결책을 요청

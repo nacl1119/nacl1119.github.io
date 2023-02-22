@@ -45,6 +45,3 @@ Okay then, I will see you on Saturday! Bye!
 move into 이사들어가다  
 get along with 친하게 지내다.  
 
-
-
-https://youtu.be/ZcGILR6X7y4?t=13130

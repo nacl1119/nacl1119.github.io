@@ -71,5 +71,3 @@ As a result, the pasta was overcooked. One good fortune was that I had **a gift 
 ## Vocabulary
 accident 사고
 incident 사건
-
-https://youtu.be/ZcGILR6X7y4?t=12120
