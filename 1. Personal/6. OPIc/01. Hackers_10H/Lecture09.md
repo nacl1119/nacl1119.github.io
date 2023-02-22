@@ -33,14 +33,21 @@ You can **season it with salt and pepper** and eat the chicken with Kimchi.
   * Survey 주제 (4~6항목) 과 돌발주제 둘 다에서 출제 많음  
   
 [핵심표현]  
-* I usually go to A once a week. I also go whenever I am stressted out.  
+
+* I usually go to A once a week. I also go whenever I am stressed out.
 * I go with my friends or family but when they are busy I go there by myself.
 
 [시작]  
 Let me see.. I first became interested in cooking whenI was eight years old.
-It was my mom's birthday. So I wanted to do something special for my mom. So I decided to cook Miyeok-gook. Miyeok-gook is a seaweed soup we eat on birthdays. I love weaweed soup because it's full of nutrients.  
+It was my mom's birthday. So I wanted to do something special for my mom.  
+So I decided to cook Miyeok-gook.  
+Miyeok-gook is a seaweed soup we eat on birthdays.  
+I love seaweed soup because it's full of nutrients.  
 [과정]  
-You know, I didn't cook at all before that. So, I asked my father to help me. My father and I searched online for a recipe and printed it out. My father helped get ingredients and taught me how to use gas stove.    
+You know, I didn't cook at all before that.  
+So, I asked my father to help me.  
+My father and I searched online for a recipe and printed it out.  
+My father helped me get ingredients and taught me how to use gas stove.  
 [결말]  
 It was very deliciou. My mom liked the soup. **To this day**, she still talks about it. It was quality time with family.
 

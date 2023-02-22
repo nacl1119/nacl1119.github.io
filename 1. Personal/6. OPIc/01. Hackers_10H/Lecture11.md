@@ -46,5 +46,3 @@ OK! I will wait here. **Thanks for your help**.
 I can think of several options 몇 가지 대안이 생각 난다.
 Which option do you prefer?  
 
-
-https://youtu.be/ZcGILR6X7y4?t=14651
