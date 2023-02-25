@@ -4,7 +4,7 @@
 
 ## [**[28] Q1 I'm going to give you a situation to act out. You want to open a bank account. Ask 3-4 questions to a bank teller about opening an account**](https://youtu.be/ZcGILR6X7y4?t=14021)
 
-* 문제유형: 롤플레잉 1단계
+* 문제유형: 롤플레이 1단계
   * 기본적인 상황극을 줌
   * 질문들은 육하원칙에 근거해서 물어본다.
   * 가벼운 인삿말과 함께 대답해서 긴장을 푼다.
@@ -27,7 +27,7 @@ OK! Thank you so much for your help! Bye!
 
 ## [**[29] Q2 I am so sorry but there is a situation I need you resolve. Your card is stuck in the ATM machine. Please call the bank, explain the situation and give 2 solutions to solve the problem.**](https://youtu.be/ZcGILR6X7y4?t=14408)
 
-* 문제유형: 롤플레잉 2단계
+* 문제유형: 롤플레이 2단계
   * 문제 상황을 주고 해결책을 요청
   * 마지막 만능표현을 활용하여 해결책에 대한 선택을 제시
   

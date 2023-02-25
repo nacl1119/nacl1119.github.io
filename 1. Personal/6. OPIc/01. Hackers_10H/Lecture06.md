@@ -44,7 +44,7 @@ We started **talking about our days** and the conversataion **went on and on**. 
 [요리 결과]  
 When **I went to ckeck on it**, it was totally burned. So, I had to throw it away. I leared a lesson. You should **fully focus on cooking**.
 
-## DICTIONANRY
+## Vocabulary
 * become interested in ~에 흥미를 가지다.
 * Talking on the phone.
 * nutrient

@@ -11,8 +11,6 @@ We first go to Haeundae Beach. **It's good for a change of air** to enjoy **the 
 **I am a light packer** when I travel. **There are several steps I take when** preparing for a trip. **The most important step is** to **make a list of** things I need to take. **This list includes** my wallet, cellphone, cellphone charger, toileties and sunglasses. **It's a piesce of cake** to decide what to pack.  
 But*it's a different story when it comes to clothes. I need to **check the local weatehr** before deciding **what to take**. If it's winter there, I take my **long underwear** and **outerwear(jumper)**. **Oh, and of cource**, **it's a must** to take my passport and airplane ticket. With these items, **I feel like** I am fully prepared!
 
-[<< 이전강의](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%02Hackers_10H/01.%20Lecture01.md) | [다음강의 >>](https://github.com/nacl1119/nacl1119.github.io/blob/main/1.%20Personal/6.%20OPIc/01.%02Hackers_10H/01.%20Lecture03.md)
-
 ## [TIP]
 [1] If there is "usually" in the question, answer using present tense.  
 [2] Seperate the topics in the answer. For example, in a trip question, it's better to talk about the preparation, activities, foods in the trip.

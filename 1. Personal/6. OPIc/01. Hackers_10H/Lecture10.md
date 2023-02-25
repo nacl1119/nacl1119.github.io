@@ -4,7 +4,7 @@
 
 ## [**[26] Q1 I'm going to give you a situation to act out. You just moved into a new apartement and you want to do recyling but do not know the rules for this apartment. Ask 3-4 questions to a person working at an administration office of this apartment about recyling system.**](https://youtu.be/ZcGILR6X7y4?t=12235)
 
-* 문제유형: 롤플레잉 1단계
+* 문제유형: 롤플레이 1단계
   * 기본적인 상황극을 줌
   * 질문들은 육하원칙에 근거해서 물어본다.
   * 가벼운 인삿말과 함께 대답해서 긴장을 푼다.
@@ -24,7 +24,7 @@ Okay! Thank you so much for your kind answer. Bye.
 
 ## [**[27] Q2 I am so sorry but there is a situation I need you resolve. You had many parties and threw out a lot of garbage. Your neighbors are complaining about your garbage so give 2 or 3 solutions to solve the problem.**](https://youtu.be/ZcGILR6X7y4?t=12624)
 
-* 문제유형: 롤플레잉 2단계
+* 문제유형: 롤플레이 2단계
   * 문제 상황을 주고 해결책을 요청
   * 마지막 만능표현을 활용하여 해결책에 대한 선택을 제시
   

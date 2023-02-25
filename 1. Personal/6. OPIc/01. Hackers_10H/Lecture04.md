@@ -15,17 +15,3 @@ What's more,the **rapid advances** in technology has allowed people to do variou
 umm..This quiestion is very difficult but I will try my best to answer. I think people used to **spend their vacations** **according to** their personal preference. Some **went abroad** for travelling while others enjoyed a **homecations**. But **everything has totally changed** because of **the COVID-19** pandemic.  
 Before the COVID-19 pandemic, many people preferred to go abroad for travelling. **It was a trend** for many young Koreans an families as well. They were able to **try out** different culture, visit tourist's attractions and **widen** the viewpoint of the world through travelling.  
 But after the COVID-19 pandemic, we can no longer travel abroad. **In fact**, we can barely **have gatherings** and eat out. So **without a choice**, people have to stay at home for(during) their vacation. I **personllay** think this is the biggest change **in how** poeple spend their vacations **from the past to now**.
-
-## [TIP]
-[1] If there is "usually" in the question, answer using present tense.  
-[2] Seperate the topics in the answer. For example, in a trip question, it's better to talk about the preparation, activities, foods in the trip.
-
-## Vocabulary
- * toiletries 세면도구
- * it's a piece of cake 너무 쉬운 일이다. 누워서 떡먹기
- * freezing cold outside.
- * fit 탄탄함, fit body 탄탄한 몸, stay fit 건강 유지하기
- * To start with 시작으로는 첫 번째로
- * let off some steam, relieve their stress
- * adore 격하게 아끼다. 아주 좋아하다.
- * as far as ~하는한. as far as I remember, as far as I know

@@ -23,17 +23,7 @@ For example, in the past, **there was not much interaction** between the two cou
 I personally think that these is the biggest change in the relationshiop between Korea an China.
 
 
-
-## [TIP]
-[1] If there is "usually" in the question, answer using present tense.  
-[2] Seperate the topics in the answer. For example, in a trip question, it's better to talk about the preparation, activities, foods in the trip.
-
 ## Vocabulary
- * toiletries 세면도구
- * it's a piece of cake 너무 쉬운 일이다. 누워서 떡먹기
- * freezing cold outside.
- * fit 탄탄함, fit body 탄탄한 몸, stay fit 건강 유지하기
- * To start with 시작으로는 첫 번째로
- * let off some steam, relieve their stress
+
  * adore 격하게 아끼다. 아주 좋아하다.
  * as far as ~하는한. as far as I remember, as far as I know
