@@ -87,4 +87,20 @@
 
 ### 2. 삼성전자 프로젝트 설명해주세요
  - intel
+ - Xen 스케줄러의 종류와 특성
+   - CREDIT 1, CREDIT 2
+ - 
 ### 3. 현대자동차 프로젝트 설명해주세요
+ - VADI 관련 설명
+ - LET-V 관련 설명 
+ - OpenGL ES와 EGL의 차이  
+    EGL은 OS와 openGL 사이에 있는 추상화 계층으로 EGL을 기반으로 openGL 실행
+ - TrustZone 이란  
+ 
+### 4. 사용해본 UML 도구
+UML 도구는 UMLet과 Draw.io 사용, 프로젝트에서 주로 use case, activity diagram, sequence diagram, class diagram을 그릴 때 사용함
+### 5. C, C++ 프로젝트 소개
+
+### 6. 사용해본 형상관리 도구
+기본적으로 Git으로 형상관리하고, WinMerge 사용하여 병합작업 수행하는 정도로 사용함
+
