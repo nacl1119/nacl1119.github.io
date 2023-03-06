@@ -95,7 +95,8 @@
  - LET-V 관련 설명 
    - VMM: Virtual Machine Manager
    - IPI: Inter Processor Interrupt
-   - SMC: Secure Monitor Call
+   - SMC: Secure Monitor Call  
+     https://os.korea.ac.kr/papers/domestic_confer/armtrustzoneipc-sbyoo.pdf
  - OpenGL ES와 EGL의 차이  
     EGL은 OS와 openGL 사이에 있는 추상화 계층으로 EGL을 기반으로 openGL 실행
  - TrustZone 이란  
