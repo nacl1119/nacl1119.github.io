@@ -116,9 +116,14 @@
 ### 3. 현대자동차 프로젝트 설명해주세요
  - VADI 관련 설명
  - LET-V 관련 설명 
+   - VMM: Virtual Machine Manager
+   - IPI: Inter Processor Interrupt
+   - SMC: Secure Monitor Call  
+     https://os.korea.ac.kr/papers/domestic_confer/armtrustzoneipc-sbyoo.pdf
  - OpenGL ES와 EGL의 차이  
     EGL은 OS와 openGL 사이에 있는 추상화 계층으로 EGL을 기반으로 openGL 실행
  - TrustZone 이란  
+   - ARM 에서 제공하는 보안영역기능, 별도의 OS가 하드웨어 지원을 통해 CPU, Memory, IO가 Secure/Non-Secure 영역으로 분리되어 동작되는 기능
  
 ### 4. 사용해본 UML 도구
 UML 도구는 UMLet과 Draw.io 사용, 프로젝트에서 주로 use case, activity diagram, sequence diagram, class diagram을 그릴 때 사용함
