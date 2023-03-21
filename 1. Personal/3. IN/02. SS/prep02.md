@@ -34,6 +34,7 @@ AFDX는 이더넷 UDP에 기반한 항공용 이더넷 스위치이다. 항공�
 ## Xen의 Interrupt 핸들링 방식
 
 ## Trustzone Interrupt 핸들링 방식
+
 ## top half bottom half
 ## Device driver 동작방식
 
