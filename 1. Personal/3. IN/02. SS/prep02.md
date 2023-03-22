@@ -1,5 +1,29 @@
 # Prep
 
+## 프로젝트에서 어려운 부분
+### 표준 프로토콜 및 개발에 대한 설명
+* 각 장비담당자들에 대한 프로토콜 교육
+* 장비담당자간 인터페이스 정의에 대한 설명, 구현방법론 설명, 서로 주고 받을 데이터에 대한설명 부족
+* 오실로스코프, HW모니터링장비 레벨의 디버깅 필요 설명
+* 장비간 불필요한 대역폭 낭비를 막기 위한 최소 데이터 설명
+* 주요 코딩룰에 대한 숙지
+### 인터페이스 연결 문제
+* AFDX를 처음 써보면서 스터디 부족으로 일어난 문제들 
+  * 참고자료
+    * https://koreascience.kr/article/JAKO201634347491676.pdf
+    * https://koreascience.kr/article/JAKO202209858365235.pdf
+    * AIM사 교육자료 https://www.aim-online.com/wp-content/uploads/2019/06/aim-afdx-training-10-10-01-u.pdf
+    * 인텔릭스 AFDX 보고서 https://scienceon.kisti.re.kr/commons/util/originalView.do?cn=TRKO201600018144&dbt=TRKO&rn=
+  * AFDX End system과 Switch에 대한 양쪽 설정을 맞춰줘야 하는 부분
+  * 큐잉은 송/수신시 저장된
+  * Virtual Link와 BAG 타임으로 대역폭이 제한되므로 End System 을 사용하는 프로그램에서도 최대한 맞춰서 보내야 하는 상황임
+  * Full spec을 공부하고 시작할수 없는 상황에서 이더넷 스위치 같이 사용하다보니 스위치의 대역폭 스케줄링으로 인한 프레임 드랍율 증가
+  * 문제가 일어난 상황에 대한 기록을 남기지 않는 담당자의 태도
+* 1553B 구현방식
+  * 1553B 표준이 있으나 현업을 통해 경험한 지식으로만 개발중인 두 팀간 커뮤니케이션을 돕기 위한 1553B 세미나 진행
+  * 서로 다른 용어를 사용하거나 같은 용어를 다른 의미로 사용중으로 인한 커뮤니케이션 오류 발생
+  * 상대 장비의 불명확한 디버깅으로 인한 책임 미루기 
+
 ## 이론 지식
 
 ### What is reliable software
@@ -32,6 +56,10 @@ https://developer.arm.com/documentation/ihi0048/b/Interrupt-Handling-and-Priorit
 ## uboot 부팅
 
 ## IRQ, FIQ 구분 방식
+외부 장치와 연결된 GIC에 Interrupt input이 연결되어있고, 해당 인터럽트들을 IRQ, FIQ 어느 것으로 처리할 것인지 GIC register설정을 통해 구분한다.  
+https://www.realdigital.org/doc/87be521204ed2c4447d567b666961ce8  
+
+GIC를 통해 구별되어 발생하는 인터럽터는 ARM core의 exception 처리모드에 따라 ARM vector table에 접근하여 처리 함수를 불러오게 된다.
 
 
 ## Xen의 Interrupt 핸들링 방식
